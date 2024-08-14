@@ -11,8 +11,7 @@ includelib \masm32\lib\masm32.lib
     message db "Hello world!", 0
 
 .code
-
-main:
-    invoke StdOut, addr message
-    invoke ExitProcess, 0
+    main:
+        invoke StdOut, addr message
+        invoke ExitProcess, 0
 end main
